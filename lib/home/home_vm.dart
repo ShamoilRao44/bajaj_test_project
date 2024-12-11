@@ -43,12 +43,13 @@ class HomeVM extends GetxController {
 
     try {
       final response = await http.post(
-        Uri.parse('http://86.38.204.199:8086/bfhl'),
+        Uri.parse('http://86.38.204.199:8063/bfhl'),
         headers: {'Content-Type': 'application/json'},
         body: inputCtrl.text,
       );
 
       if (response.statusCode == 200) {
+        Get.snackbar('Success', 'API call successfull!');
         responseData = json.decode(response.body);
 
         update();

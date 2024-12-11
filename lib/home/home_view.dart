@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
     return GetBuilder<HomeVM>(builder: (c) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('0827CI211176'),
+          title: Text('0827CI211086'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
